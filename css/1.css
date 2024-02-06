@@ -1,0 +1,450 @@
+.interview {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.info ul,
+.content-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.content-list {
+    padding-left: 50px;
+    font-size: 19px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.info span,
+.content-list span {
+    position: relative;
+}
+
+.info span:before,
+.content-list span::before {
+    content: "•";
+    font-size: 39px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content-list span::before {
+    top: 57%;
+}
+.content-list li {
+    margin-bottom: 20px;
+}
+
+hr {
+    color: black;
+    margin: 15px 0;
+}
+
+.interview img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.interview p {
+    margin-left: 15px;
+}
+
+.interview span {
+    font-weight: bold;
+}
+
+.content-img {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+hr {
+    margin: 15px 0;
+}
+
+
+.prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+.old {
+    color: black;
+    text-decoration: line-through;
+    margin-right: 15px;
+    font-size: 19px;
+}
+
+.new {
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.form_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    margin: 15px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+form input {
+    padding: 8px 15px;
+    width: 95%;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+    transition: 0.3s background-color;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: tomato;
+}
+
+.comments_block {
+    margin-top: 35px;
+}
+
+.ava {
+    max-width: 72px;
+    float: left;
+}
+
+.comment {
+    margin-bottom: 50px;
+}
+
+.comment-text {
+    padding-left: 80px;
+    max-width: 750px;
+    width: 100%;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+}
+
+a[href="#form"] {
+    color: blue;
+}
+.container a {
+    text-decoration: underline;
+}
+
+.comment-text:last-child {
+    font-size: 19px;
+}
+
+.comment-name {
+    position: relative;
+    top: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.comment-text img {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 350px;
+}
+
+@media (max-width: 644px) {
+    .interview {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        margin: 15px 0;
+    }
+
+    .interview p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .frm {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .ava {
+        width: 60px;
+        height: 60px;
+    }
+
+    .comment-text {
+        padding-left: 60px;
+    }
+
+    .sub-heading {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}
+
+.prices {
+    margin: 0 auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.new-price {
+    background: #00b96b;
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+    padding-top: 5px;
+    border-radius: 30px 0px 0px 30px;
+    color: #fff;
+}
+
+.old-price {
+    background: #ffffff;
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+    padding-top: 5px;
+    border-radius: 0 30px 30px 0;
+    text-decoration: line-through;
+}
+
+a[href^="tel"] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
+}
+
+.gift {
+    width: 368px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+.gift__img {
+    max-width: 100%;
+}
+.gift__text {
+    color: #000;
+    position: absolute;
+    width: 183px;
+    font-size: 16px;
+    line-height: 19px;
+    top: 65px;
+    right: 20px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+@media (max-width: 480px) {
+    .gift {
+        width: 76vw;
+    }
+    .gift__text {
+        font-size: 3.33vw;
+        line-height: 3.95vw;
+        width: 38.1vw;
+        top: 15vw;
+        right: 5vw;
+    }
+}
+
+.timerHolder {
+    background: red!important;
+    padding: 10px 25px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.timerHolder span {
+    display: block;
+}
+
+.timerHolder div {
+    background: transparent!important;
+    display: inline-block!important;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.timerHolder .timerVal {
+    font-size: 19px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.timerHolder .timerSign {
+    font-size: 10px;
+    text-align: center;
+    margin: 0px;
+    color: #fff;
+}
+
+hr {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+.orderTypeButton {
+    background-color: #e7e7e7!important;
+    display: inline-block;
+    padding: 7px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 150px;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.otHead {
+    font-size: 16px;
+    display: block;
+}
+
+.otPrice {
+    font-size: 22px;
+}
+
+.otCurr {
+    font-size: 10px;
+}
+
+.orderTypeButton span {
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.otButton {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.orderTypeButtonActive {
+    background: yellow!important;
+    background-image: url(../images/tick.png)!important;
+    background-repeat: no-repeat!important;
+    background-position: center bottom!important;
+    border: 2px solid red;
+}
+
+.otFirst {
+    margin-right: 15px;
+}
+
+.otTimerImg img {
+    padding: 0px!important;
+    margin: 0px!important;
+}
+
+.otTimerImg {
+    position: absolute;
+    top: -16px;
+    right: -13px;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    background: transparent!important;
+}
+
+#content img {
+    max-width: 100%;
+    display: block;
+    margin: 20px 0px;
+}
+
+#order_form {
+    background: white;
+    padding: 0px;
+    font-family: Arial;
+    display: inline-block;
+    background-image: url(../images/bgform.jpg);
+    background-size: cover;
+    border-radius: 5px;
+}
+
+#order_form_place {
+    padding: 10px;
+    border: 0px solid red;
+    border-radius: 5px;
+    box-shadow: 4px 9px 5px 0px rgb(50 50 50 / 75%);
+}
+
+#order_form div {
+    background: transparent!important;
+}
+
+#order_form .order_form_pole {
+    padding: 10px;
+    margin: 10px;
+}
+
+#order_form button, .obutton {
+    max-width: 336px;
+    display: block;
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 15px 0 rgb(129 150 160 / 45%);
+    border-radius: 5px;
+    background-color: red;
+    background-position: 1.35em .94em;
+    background-size: 1em;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#order_form button:hover, .obutton:hover {
+    background-color: rgb(200,0,0);
+}
